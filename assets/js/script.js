@@ -159,4 +159,3 @@ navigationLinks.forEach(link => {
     });
   });
 });
-}
