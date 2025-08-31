@@ -1873,10 +1873,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-	 * RESUME
-	 */
+}
 
-  .timeline-text { max-width: 700px; }
+a {
+  color: blue;              /* default link color */
+  text-decoration: none;    /* remove underline if you want */
+}
 
+a:visited {
+  color: blue;              /* make visited links same color */
+}
+
+a:hover {
+  color: darkblue;          /* optional: color when hovering */
 }

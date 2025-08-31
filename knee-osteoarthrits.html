@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikuobolati Abiodun Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Knee Osteoarthritis Detection and Severity Classification in Medical Images Using Deep Learning</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            This project focuses on the automated detection and severity classification of Knee Osteoarthritis (KOA) from medical images using deep learning. Osteoarthritis is a leading cause of disability worldwide, and early detection is critical to improving patient outcomes.
+          </p>
+
+          <p>
+            For the detection stage, we employed Detectron2, a state-of-the-art object detection framework, to localize knee joints within radiographic images. Following detection, the extracted regions were passed into an Xception-based classification network, which was fine-tuned to assess osteoarthritis severity according to the Kellgren–Lawrence (KL) grading system. The KL scale (grades 0–4) provides a standardized radiographic measure of osteoarthritis progression, ranging from normal to severe degeneration.
+          </p>
+
+          <p>
+            By combining robust detection with fine-grained severity classification, this system provides a scalable AI-powered tool to assist radiologists and clinicians in diagnosing KOA and tracking disease progression. The pipeline is designed to reduce diagnostic workload, support consistent grading, and potentially enable large-scale population screening in both clinical and low-resource healthcare settings.
+          </p>
+          <p>
+            Experiment with it <a href="https://huggingface.co/spaces/Harbiodun0122/Knee-Osteoarthritis-Severity-Grading" target="_blank">here</a>
+          </p>
+        </section>
+
+
+        
+       
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
