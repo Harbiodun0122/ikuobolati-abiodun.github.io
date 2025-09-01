@@ -674,26 +674,7 @@ main {
   opacity: 1;
 }
 
-.modal-close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: var(--onyx);
-  border-radius: 8px;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--white-2);
-  font-size: 18px;
-  opacity: 0.7;
-}
 
-.modal-close-btn:hover,
-.modal-close-btn:focus { opacity: 1; }
-
-.modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .modal-avatar-box {
   background: var(--bg-gradient-onyx);
@@ -997,6 +978,7 @@ main {
   --scale: 1;
   opacity: 1;
 }
+
 
 .project-item-icon-box ion-icon { --ionicon-stroke-width: 50px; }
 
@@ -1875,9 +1857,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+
 a {
   color: blue;              /* default link color */
   text-decoration: none;    /* remove underline if you want */
+  display: inline; /* or display: inline-block; */
 }
 
 a:visited {
