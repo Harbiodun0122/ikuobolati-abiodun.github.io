@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR for Nigerian License Plate</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">OCR for Nigerian License Plate</h2>
+        </header>
+
+        <section class="about-text">
+          <h4>Overview</h4>
+          <p>
+            Optical Character Recognition (OCR) is a technology that enables a computer to identify and read text from images or scanned documents. It works by analyzing the shapes and patterns of characters in an image and converting them into machine-readable text. It is commonly used to extract text from photographs, printed documents, license plates, and signs.
+          </p>
+
+          <h4>Problem Statement</h4>
+          <p>
+            Traffic lights are used in Nigeria to control the flow of vehicles and improve road safety. However, many drivers do not obey traffic lights, which makes the roads unsafe for other drivers and pedestrians. This lack of compliance often leads to accidents, traffic congestion, and unnecessary loss of life. 
+          </p>
+          
+          <h4>Dataset</h4>
+          <p>
+            The dataset used is comprised of 4365 images of cars with the Nigerian license plate, divided into 70% train, 20% test and 10% validation. The link to the dataset is provided <a href="https://app.roboflow.com/abiodun-projects/license-plates-o3clj-uni85/4" target="_blank">here.</a>
+          </p>
+
+          <h4>Plate detection model</h4>
+          <p>
+            The <i>yolov11s.pt</i> model was used for detection of license plate due to its high accuracy and moderate computational cost. Click <a href="https://docs.ultralytics.com/models/yolo11/#supported-tasks-and-modes" target="_blank">here</a> to check documentation.
+          </p>
+
+          <h4>OCR model</h4>
+          <p>
+            The model used is fast-plate-ocr, a lightweight and fast OCR framework for license plate text recognition. Click <a href="https://ankandrew.github.io/fast-plate-ocr/latest/" target="_blank">here</a> for model documentation.
+          </p>
+
+          <h4>Project Workflow</h4>
+          <p>
+            Data collection --> Data Preprocessing and Augmentation --> Detection model training --> Cropping out detected plate --> Plate OCR
+          </p>
+
+        </section>
+
+        <ul class="project-list">
+
+          <li class="project-item  active" data-filter-item data-category="applications">
+            
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/license-plate-ocr.png" alt="license-plate-ocr" loading="lazy">
+              </figure>
+            
+              <p class="project-category">License plate detection and OCR</p>
+          </li>
+        </ul>
+        
+      </article>
+    
+    </div>
+    
+  </main>
+
+</body>
+
+</html>
